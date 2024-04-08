@@ -1,0 +1,29 @@
+deviceinfo_name="Xiaomi Redmi Pad"
+deviceinfo_codename="yunluo"
+deviceinfo_arch="aarch64"
+deviceinfo_kernel_source="https://github.com/xiaomi-mt6789-devs/kernel_xiaomi-yunluo.git"
+deviceinfo_kernel_source_branch="tm"
+deviceinfo_kernel_defconfig="gki_defconfig yunluo.config halium.config"
+deviceinfo_kernel_clang_compile="true"
+deviceinfo_kernel_llvm_compile="true"
+
+deviceinfo_ramdisk_compression="lz4"
+deviceinfo_bootimg_header_version="4"
+deviceinfo_bootimg_partition_size="67108864"
+deviceinfo_rootfs_image_sector_size="4096"
+deviceinfo_halium_version="12"
+
+deviceinfo_bootimg_os_version="12.0"
+deviceinfo_bootimg_os_patch_level="2024-12"
+
+# fuck me sideways
+deviceinfo_flash_pagesize="2048"
+deviceinfo_flash_offset_base="0x00000000"
+deviceinfo_flash_offset_kernel="0x40000000"
+deviceinfo_flash_offset_ramdisk="0x66f00000"
+deviceinfo_flash_offset_tags="0x47c80000"
+deviceinfo_flash_offset_dtb="0x47c80000"
+
+deviceinfo_kernel_cmdline="bootopt=64S3,32N2,64N2"
+
+deviceinfo_bootimg_prebuilt_dtb="yunluo.dtb"
